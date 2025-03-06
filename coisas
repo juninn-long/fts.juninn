@@ -1,0 +1,73 @@
+import java.util.scanner;
+public class canaRomantica {
+  public static void  main(String[]
+ args) {
+     //Crie os personagens
+     Homem homem =new Homem("João");
+     Mulher mulher = new Mulher("Mulher");
+	 
+	 //Crie as flores
+	 Flores flores=new Flores("Rosas
+	 vermelhas");
+	 //A cena começa
+	 System.out.println("João chega ao encontro com Maria...");
+	 homem.chegarAoEncontro(mulher);
+	 
+	 //João dá flores para Maria
+	 System.out.println("João dá as flores para Maria..");
+	 homem.darflores(mulher,flores);
+	 
+	 //Maria reage com alegria
+	 System.out.println("Maria fica feliz com as flores...");
+	   mulher.reagirComAlegria();
+	   }
+	  }
+	  //Class Homem
+	  Class Homem {
+	    private String nome;
+		
+		public Homem(String nome) {
+		  this.nome = nome;
+		 }
+		 public void
+		chegarAoEncontro(Mulher mulher) {
+		    System.out.println(nome +
+		" chega ao encontro com " +
+		mulher.getNome() +".");
+		 }
+		 
+		 public void darflores(Mulher
+		mulher,Flores flores) {
+		    System.out.println(nome + " dá
+	    as " + flores.getDrescricao() + "
+		para " + mulher.getNome () + ".");
+		  }
+		}
+		
+		// Class Mulher
+		class Mulher {
+		  private String nome;
+		  
+		  public Mulher(String nome) {
+		    this.nome = nome;
+		  }
+		  public String getNome() {
+		    return nome;
+		  }
+		  public void reagirComAlegria() {
+            System.out.println(nome + "
+        fica feliz e agradece o gesto.");
+          }
+        }
+        //Class Flores
+        Class flores {
+           private String descricao;
+           
+           public Flores(String descricao) {
+             this.descricao = descricao;
+        }
+
+        public String getDrescricao() {
+		  return descricao;
+		  }
+   {
